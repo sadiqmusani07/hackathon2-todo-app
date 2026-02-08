@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmybookproject=self.webpackChunkmybookproject||[]).push([[6366],{6366(e,c,r){r.d(c,{createArchitectureServices:()=>t.S});var t=r(8980);r(7960)}}]);

@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\DELL\\\\Documents\\\\GitHub\\\\hackathon1-claude-speckitdev-book\\\\.specify\\\\templates\"\")",
+      "Bash(npm run build)",
+      "Bash(npm start)",
+      "Bash(npx docusaurus clear)",
+      "Bash(npx docusaurus start)",
+      "Bash(npm cache clean --force)",
+      "Bash(npm install @docusaurus/bundler @docusaurus/module-type-aliases @docusaurus/types --save-dev)",
+      "Skill(sp.tasks)",
+      "Skill(sp.specify)",
+      "Bash(git fetch --all --prune)",
+      "Skill(sp.plan)",
+      "Skill(sp.implement)",
+      "Bash(powershell -Command \".specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks\")",
+      "Bash(npx docusaurus serve --port 3002)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3000)",
+      "Bash(npx docusaurus start --port 8080)",
+      "Bash(git add .)",
+      "Bash(git commit -m \"fix: Update Docusaurus config to resolve build issues for Vercel deployment\n\n- Set trailingSlash to false to resolve missing module issues during SSR\n- Update babel config to use Docusaurus preset for proper module resolution\n\nThis should fix the ''Cannot find module ./assets/js/237.54fcf315.js'' error during Vercel builds.\")"
+    ]
+  }
+}

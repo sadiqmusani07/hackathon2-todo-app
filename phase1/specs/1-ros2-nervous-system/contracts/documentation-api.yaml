@@ -1,0 +1,195 @@
+openapi: 3.0.0
+info:
+  title: ROS 2 Nervous System Documentation API
+  description: API for accessing the ROS 2 Nervous System educational content
+  version: 1.0.0
+servers:
+  - url: https://my-ros2-book.com
+    description: Production server
+  - url: http://localhost:3000
+    description: Development server
+
+paths:
+  /docs/ros2-fundamentals:
+    get:
+      summary: Get ROS 2 Fundamentals chapter
+      description: Returns the content for the ROS 2 fundamentals chapter covering nodes, topics, and services
+      responses:
+        '200':
+          description: ROS 2 fundamentals chapter content
+          content:
+            text/html:
+              schema:
+                type: string
+                description: HTML content of the chapter
+            application/json:
+              schema:
+                type: object
+                properties:
+                  title:
+                    type: string
+                    example: "ROS 2 Fundamentals — Nodes, Topics, and Services"
+                  content:
+                    type: string
+                    example: "# ROS 2 Fundamentals Chapter Content..."
+                  learningObjectives:
+                    type: array
+                    items:
+                      type: string
+                    example: ["Understand ROS 2 as middleware", "Identify nodes, topics, and services"]
+        '404':
+          description: Chapter not found
+
+  /docs/python-ai-integration:
+    get:
+      summary: Get Python AI Integration chapter
+      description: Returns the content for the Python AI agents integration chapter with rclpy
+      responses:
+        '200':
+          description: Python AI integration chapter content
+          content:
+            text/html:
+              schema:
+                type: string
+                description: HTML content of the chapter
+            application/json:
+              schema:
+                type: object
+                properties:
+                  title:
+                    type: string
+                    example: "Connecting Python AI Agents with rclpy"
+                  content:
+                    type: string
+                    example: "# Python AI Integration Chapter Content..."
+                  learningObjectives:
+                    type: array
+                    items:
+                      type: string
+                    example: ["Create Python ROS 2 nodes", "Connect AI to robot actions"]
+        '404':
+          description: Chapter not found
+
+  /docs/urdf-modeling:
+    get:
+      summary: Get URDF Modeling chapter
+      description: Returns the content for the URDF robot modeling chapter
+      responses:
+        '200':
+          description: URDF modeling chapter content
+          content:
+            text/html:
+              schema:
+                type: string
+                description: HTML content of the chapter
+            application/json:
+              schema:
+                type: object
+                properties:
+                  title:
+                    type: string
+                    example: "Defining the Robot Body with URDF"
+                  content:
+                    type: string
+                    example: "# URDF Modeling Chapter Content..."
+                  learningObjectives:
+                    type: array
+                    items:
+                      type: string
+                    example: ["Create robot models with URDF", "Understand links and joints"]
+        '404':
+          description: Chapter not found
+
+  /docs/search:
+    get:
+      summary: Search documentation content
+      description: Search across all chapters for specific terms
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Search query term
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 10
+          description: Maximum number of results to return
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        title:
+                          type: string
+                        url:
+                          type: string
+                        excerpt:
+                          type: string
+                        score:
+                          type: number
+        '400':
+          description: Invalid search query
+
+components:
+  schemas:
+    Chapter:
+      type: object
+      required:
+        - title
+        - content
+      properties:
+        title:
+          type: string
+          description: Title of the chapter
+        content:
+          type: string
+          description: Content of the chapter in MDX format
+        learningObjectives:
+          type: array
+          items:
+            type: string
+          description: List of learning objectives for the chapter
+        prerequisites:
+          type: array
+          items:
+            type: string
+          description: Prerequisites needed to understand the chapter
+        examples:
+          type: array
+          items:
+            $ref: '#/components/schemas/Example'
+        nextChapter:
+          type: string
+          description: URL slug of the next chapter in sequence
+
+    Example:
+      type: object
+      required:
+        - title
+        - language
+        - code
+      properties:
+        title:
+          type: string
+          description: Brief description of the example
+        language:
+          type: string
+          description: Programming language of the example
+        code:
+          type: string
+          description: The actual code snippet
+        explanation:
+          type: string
+          description: Explanation of what the code does

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmybookproject=self.webpackChunkmybookproject||[]).push([[1e3],{1e3(e,c,r){r.d(c,{createRadarServices:()=>a.f});var a=r(7846);r(7960)}}]);

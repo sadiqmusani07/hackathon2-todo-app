@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-vercel-domain.vercel.app/blog</id>
+    <title>Physical AI &amp; Humanoid Robotics Blog</title>
+    <updated>2025-01-01T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-vercel-domain.vercel.app/blog"/>
+    <subtitle>Physical AI &amp; Humanoid Robotics Blog</subtitle>
+    <icon>https://your-vercel-domain.vercel.app/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to ROS 2 Nervous System Blog]]></title>
+        <id>https://your-vercel-domain.vercel.app/blog/welcome</id>
+        <link href="https://your-vercel-domain.vercel.app/blog/welcome"/>
+        <updated>2025-01-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ROS 2 Robot]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="ROS 2 Robot" src="data:image/jpeg;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgODAwIDQwMCI+CiAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiNmMGY4ZmYiLz4KICA8cmVjdCB4PSIzMDAiIHk9IjEwMCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiM0NjgyYjQiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPGNpcmNsZSBjeD0iMzUwIiBjeT0iMTUwIiByPSIyMCIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8Y2lyY2xlIGN4PSI0NTAiIGN5PSIxNTAiIHI9IjIwIiBmaWxsPSIjZmZmIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxyZWN0IHg9IjMyNSIgeT0iMjIwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjNTU2YjJmIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMzIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiMzMzMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJPUyAyIFJvYm90PC90ZXh0Pgo8L3N2Zz4=" width="800" height="400" class="img_ev3q"></p>
+<p>Welcome to our blog where we'll share insights, tutorials, and updates about connecting AI decision-making systems to humanoid robot bodies using ROS 2.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-to-expect">What to Expect<a href="https://your-vercel-domain.vercel.app/blog/welcome#what-to-expect" class="hash-link" aria-label="Direct link to What to Expect" title="Direct link to What to Expect" translate="no">​</a></h2>
+<p>In this blog, we'll cover:</p>
+<ul>
+<li class="">Advanced ROS 2 concepts and best practices</li>
+<li class="">AI-robot integration techniques</li>
+<li class="">Humanoid robot modeling and control</li>
+<li class="">Simulation and real-world deployment experiences</li>
+<li class="">Community contributions and success stories</li>
+</ul>
+<p>Stay tuned for our upcoming posts where we'll dive deeper into specific topics like sensor fusion, motion planning, and real-time control systems.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-started">Getting Started<a href="https://your-vercel-domain.vercel.app/blog/welcome#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started" translate="no">​</a></h2>
+<p>If you're new to ROS 2 and humanoid robotics, check out our documentation to get started with the fundamentals.</p>]]></content>
+        <category label="ros2" term="ros2"/>
+        <category label="robotics" term="robotics"/>
+        <category label="ai" term="ai"/>
+        <category label="humanoid" term="humanoid"/>
+    </entry>
+</feed>
