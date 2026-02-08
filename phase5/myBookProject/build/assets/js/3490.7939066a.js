@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmybookproject=self.webpackChunkmybookproject||[]).push([[3490],{3490(e,c,o){o.d(c,{createInfoServices:()=>k.v});var k=o(1885);o(7960)}}]);

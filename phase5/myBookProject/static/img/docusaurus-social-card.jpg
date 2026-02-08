@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f5f5f5"/>
+  <rect x="0" y="0" width="1200" height="100" fill="#2e8555"/>
+  <text x="600" y="60" font-family="Arial" font-size="36" fill="white" text-anchor="middle">ROS 2 Nervous System for Physical AI &amp; Humanoid Robotics</text>
+  <text x="600" y="300" font-family="Arial" font-size="24" fill="#333" text-anchor="middle">Connecting AI Decision-Making to Humanoid Robot Bodies</text>
+  <text x="600" y="400" font-family="Arial" font-size="18" fill="#666" text-anchor="middle">Learn how to establish ROS 2 as the foundational communication and control layer</text>
+</svg>
